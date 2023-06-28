@@ -1,0 +1,26 @@
+<p>carrental-list works!</p>
+<div class ="row">
+    <h2>carrental list</h2>
+</div>
+<table class="table table-striped table-borfered">
+    <thead>
+        <tr>
+          <th>car_name</th>
+          <th>rent</th>
+          <th>rental_name</th>
+          <th>time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of carrental">
+            <td>{{car.car_name}}</td>
+            <td>{{car.rent}}</td>
+            <td>{{car.rental_name}}</td>
+            <td>{{car.time}}</td>
+            <button (click)="updateCarrental(car.id)"class="btn btn-primary">Update</button>
+            <button (click)="deleteCarrental(car.id)"class="btn btn-danger" style="margin-left: 10px">Delete</button>
+            <button (click)="carrentalDetails(car.id)"class="btn btn-primary" style="margin-left: 10px">View</button>
+        </tr>
+    </tbody>
+</table>
+
