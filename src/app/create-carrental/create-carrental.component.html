@@ -1,20 +1,20 @@
-<p>create-carrental works!</p>
+<p>carrental-list works!</p>
 <div class="row">
     <div class="card col-md-6 offset-md-3 offset-md-3">
         <div class="row">
-            <h3 class="text-center"> Create Carrental </h3>
+            <h3 class="text-center"> Create Employee </h3>
             <hr />
             <div class="card-body">
                 <form (ngSubmit)="onSubmit()">
 
                     <div class="form-group">
-                        <label> car name</label>
+                        <label> car Name</label>
                         <input type="text" class="form-control" id="car_name" [(ngModel)]="carrental.car_name"
                             name="car_name">
                     </div>
 
                     <div class="form-group">
-                        <label>rent</label>
+                        <label> rent</label>
                         <input type="text" class="form-control" id="rent" [(ngModel)]="carrental.rent"
                             name="rent">
                     </div>
@@ -22,10 +22,10 @@
                     <div class="form-group">
                         <label> rental_name</label>
                         <input type="text" class="form-control" id="rental_name" [(ngModel)]="carrental.rental_name"
-                            name="rental_name">
+                            name="carrental_name">
                     </div>
                     <div class="form-group">
-                        <label>time </label>
+                        <label> time</label>
                         <input type="text" class="form-control" id="time" [(ngModel)]="carrental.time"
                             name="time">
                     </div>
